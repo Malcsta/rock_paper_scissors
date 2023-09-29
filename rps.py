@@ -38,9 +38,11 @@ while interface_active:
     user_choice = user_choice.upper()
     if user_choice not in user_selections:
         print("*"*40)
-        print('{:^40s}'.format("INVALID SELECTION")) 
+        print('{:^40s}'.format("INVALID SELECTION"))
         print("*"*40)
-        break
+        sleep(2)
+        os.system('clear')
+        continue
 
 
 ## Determining who wins
