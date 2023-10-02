@@ -20,6 +20,7 @@ computer_selections = ('R', 'P', 'S')
 interface_active = True
 user_score = 0
 computer_score = 0
+user_streak = 0
 
 def slowtype(message):
     string_to_type = message
@@ -38,6 +39,7 @@ while interface_active:
     print('{:^40s}'.format("ROCK PAPER SCISSORS")) 
     print('{:^40s}'.format("BY M@LC0LM"))
     print('{:^40s}'.format(f"Your score: {user_score}"))
+    print('{:^40s}'.format(f"Current streak: {user_streak}"))
     print('{:^40s}'.format(f"Computer score: {computer_score}"))
     print()
     print('{:^40s}'.format("Rock: R"))
@@ -78,6 +80,7 @@ while interface_active:
         sleep(1)
         print('{:^40s}'.format("Computer wins!"))
         computer_score += 1 
+        user_streak = 0
 
     elif user_choice == 'R' and computer_selection == 'P':
         
@@ -85,6 +88,7 @@ while interface_active:
         sleep(1)
         print('{:^40s}'.format("Computer wins!"))
         computer_score += 1  
+        user_streak = 0
         
     elif user_choice == 'P' and computer_selection == 'S':
         
@@ -92,6 +96,7 @@ while interface_active:
         sleep(1)
         print('{:^40s}'.format("Computer wins!"))
         computer_score += 1  
+        user_streak = 0
         
     elif user_choice == 'S' and computer_selection == 'P':
         
@@ -99,6 +104,7 @@ while interface_active:
         sleep(1)
         print('{:^40s}'.format("User wins!")) 
         user_score += 1
+        user_streak +=1
         
     elif user_choice == 'P' and computer_selection == 'R':
         
@@ -106,6 +112,7 @@ while interface_active:
         sleep(1)
         print('{:^40s}'.format("User wins!"))
         user_score += 1 
+        user_streak +=1
         
     elif user_choice == 'R' and computer_selection == 'S':
         
@@ -113,6 +120,7 @@ while interface_active:
         sleep(1)
         print('{:^40s}'.format("User wins!"))
         user_score += 1 
+        user_streak +=1
         
 ## Asking if user wants to try again
 
