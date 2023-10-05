@@ -22,12 +22,24 @@ interface_active = True
 user_score = 0
 computer_score = 0
 user_streak = 0
+<<<<<<< HEAD:main.py
+=======
+
+def slowtype(message):
+    string_to_type = message
+    for char in string_to_type:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.15)
+
+>>>>>>> 97f5d59d8686fad4a643c5720ad74d192a366c03:rps.py
 
 ## Terminal window
 
 while interface_active:
     computer_selection = random.choice(computer_selections)
     print()
+<<<<<<< HEAD:main.py
     slowtype('Rock, Paper, Scissors!\n', 0.05)
     slowtype('By Malcolm White, 10/2023.\n', 0.05)
     sleep(0.7)
@@ -40,6 +52,21 @@ while interface_active:
     slowtype('SCISSORS = S\n', 0.02) 
     sleep(0.7)
     
+=======
+    print("*"*40)
+    print('{:^40s}'.format("ROCK PAPER SCISSORS")) 
+    print('{:^40s}'.format("BY M@LC0LM"))
+    print('{:^40s}'.format(f"Your score: {user_score}"))
+    print('{:^40s}'.format(f"Current streak: {user_streak}"))
+    print('{:^40s}'.format(f"Computer score: {computer_score}"))
+    print()
+    print('{:^40s}'.format("Rock: R"))
+    print('{:^40s}'.format("Paper: P"))
+    print('{:^40s}'.format("Scissors: S"))
+    print("*"*40)
+
+
+>>>>>>> 97f5d59d8686fad4a643c5720ad74d192a366c03:rps.py
 ## User input validation
 
     user_choice = input("Enter your selection: ")
@@ -70,9 +97,15 @@ while interface_active:
         
         print("Rock beats scissors!")
         sleep(1)
+<<<<<<< HEAD:main.py
         print("Computer wins!")
         computer_score += 1
         user_streak = 0 
+=======
+        print('{:^40s}'.format("Computer wins!"))
+        computer_score += 1 
+        user_streak = 0
+>>>>>>> 97f5d59d8686fad4a643c5720ad74d192a366c03:rps.py
 
     elif user_choice == 'R' and computer_selection == 'P':
         
@@ -80,7 +113,11 @@ while interface_active:
         sleep(1)
         print("Computer wins!")
         computer_score += 1  
+<<<<<<< HEAD:main.py
         user_streak = 0 
+=======
+        user_streak = 0
+>>>>>>> 97f5d59d8686fad4a643c5720ad74d192a366c03:rps.py
         
     elif user_choice == 'P' and computer_selection == 'S':
         
@@ -88,7 +125,11 @@ while interface_active:
         sleep(1)
         print("Computer wins!")
         computer_score += 1  
+<<<<<<< HEAD:main.py
         user_streak = 0 
+=======
+        user_streak = 0
+>>>>>>> 97f5d59d8686fad4a643c5720ad74d192a366c03:rps.py
         
     elif user_choice == 'S' and computer_selection == 'P':
         
@@ -96,7 +137,11 @@ while interface_active:
         sleep(1)
         print("User wins!") 
         user_score += 1
+<<<<<<< HEAD:main.py
         user_streak += 1
+=======
+        user_streak +=1
+>>>>>>> 97f5d59d8686fad4a643c5720ad74d192a366c03:rps.py
         
     elif user_choice == 'P' and computer_selection == 'R':
         
@@ -104,7 +149,11 @@ while interface_active:
         sleep(1)
         print("User wins!")
         user_score += 1 
+<<<<<<< HEAD:main.py
         user_streak += 1
+=======
+        user_streak +=1
+>>>>>>> 97f5d59d8686fad4a643c5720ad74d192a366c03:rps.py
         
     elif user_choice == 'R' and computer_selection == 'S':
         
@@ -112,7 +161,11 @@ while interface_active:
         sleep(1)
         print("User wins!")
         user_score += 1 
+<<<<<<< HEAD:main.py
         user_streak += 1
+=======
+        user_streak +=1
+>>>>>>> 97f5d59d8686fad4a643c5720ad74d192a366c03:rps.py
         
 ## Asking if user wants to try again
 
