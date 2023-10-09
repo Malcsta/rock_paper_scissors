@@ -31,7 +31,7 @@ while interface_active:
     slowtype('Rock, Paper, Scissors!\n', 0.05)
     slowtype('By Malcolm White, 10/2023.\n', 0.05)
     sleep(0.7)
-    print(f"Current streak: {user_streak}")
+    slowtype(f"Current streak: {user_streak}\n", 0.05)
     sleep(0.7)
     slowtype('ROCK = R\n', 0.02) 
     sleep(0.7)
